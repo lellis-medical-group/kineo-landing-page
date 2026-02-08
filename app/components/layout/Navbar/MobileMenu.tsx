@@ -33,7 +33,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
             <div
                 className={`
-                    fixed top-0 right-0 h-full w-[280px] sm:w-[320px] bg-white
+                    fixed top-0 right-0 h-full w-70 sm:w-[320px] bg-white
                     shadow-2xl lg:hidden overflow-y-auto z-50
                     transition-transform duration-300 ease-in-out
                     ${isOpen ? 'translate-x-0' : 'translate-x-full'}
@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                             Log In
                         </Button>
                         <Button variant="primary" fullWidth href="/start" onClick={onClose}>
-                            Start free
+                            Start Now
                         </Button>
                     </div>
                 </div>

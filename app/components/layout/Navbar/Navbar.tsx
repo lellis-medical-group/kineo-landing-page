@@ -58,11 +58,11 @@ const Navbar = () => {
 
                     <div className="hidden lg:flex items-center gap-3">
                         <Button variant="ghost" href='/login'>Log In</Button>
-                        <Button variant="primary" href='/start'>Start free</Button>
+                        <Button variant="primary" href='/start'>Start Now</Button>
                     </div>
                     <div className="flex lg:hidden items-center gap-3">
                         <Button variant="primary" size="sm" href='/start'>
-                            Start free
+                            Start Now
                         </Button>
                         <button
                             onClick={toggleMobileMenu}
