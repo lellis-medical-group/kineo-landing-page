@@ -2,11 +2,11 @@ import { Link } from "react-router";
 import type { ReactNode } from "react";
 
 interface ButtonProps {
-    variant: 'primary' | 'ghost';
+    variant: 'primary' | 'secondary' | 'ghost';
     children: ReactNode;
     onClick?: () => void;
     href?: string;
-    size?: 'sm' | 'md';
+    size?: 'sm' | 'md' | 'lg';
     fullWidth?: boolean;
 }
 
@@ -32,6 +32,7 @@ const Button = ({
     const sizeStyles = {
         sm: 'px-3 py-1.5 text-xs sm:text-sm',
         md: 'px-4 sm:px-5 py-2 sm:py-2.5 text-sm',
+        lg: 'px-6 sm:px-8 py-3 sm:py-3.5 text-base sm:text-lg',
     };
 
     const variantStyles = {
@@ -42,8 +43,15 @@ const Button = ({
             border border-transparent
             active:scale-95
         `,
+        secondary: `
+            bg-[#004838]
+            text-[#E2FB6C]
+            hover:bg-[#073127]
+            border border-transparent
+            active:scale-95
+        `,
         ghost: `
-            bg-transparent
+            bg-white
             text-gray-700
             hover:text-gray-900
             border border-gray-300
