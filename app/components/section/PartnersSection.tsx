@@ -21,20 +21,17 @@ const PartnersSection = () => {
                         </p>
                     </div>
 
-                    {/* Rail du tapis roulant : Gap réduit à 8 ou 12 */}
                     <div className="w-full md:w-2/3 overflow-hidden relative">
-                        {/* Effets de fondu */}
                         <div className="absolute inset-y-0 left-0 w-12 bg-linear-to-r from-white to-transparent z-10" />
                         <div className="absolute inset-y-0 right-0 w-12 bg-linear-to-l from-white to-transparent z-10" />
-
-                        {/* Gap-8 pour réduire l'espace entre les logos */}
-                        <div className="flex items-center gap-8 animate-marquee-slow whitespace-nowrap">
+                        <div className="flex items-center gap-12 md:gap-16 animate-marquee-slow whitespace-nowrap">
                             {scrollingLogos.map((partner, index) => (
-                                <PartnerLogo
-                                    key={`${partner.name}-${index}`}
-                                    name={partner.name}
-                                    logo={partner.logo}
-                                />
+                                <div key={`${partner.name}-${index}`} className="shrink-0">
+                                    <PartnerLogo
+                                        name={partner.name}
+                                        logo={partner.logo}
+                                    />
+                                </div>
                             ))}
                         </div>
                     </div>
