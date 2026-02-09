@@ -19,7 +19,7 @@ const HeroSection = () => {
 
           <FloatingAvatars />
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-5 sm:mb-6 leading-[1.1] max-w-5xl px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#004838] mb-5 sm:mb-6 leading-[1.1] max-w-5xl px-4">
             One tool to manage
             <br />
             contracts and{' '}
