@@ -21,7 +21,7 @@ const AnimatedGrid = () => {
             )
           `,
                     backgroundSize: '24px 24px',
-                    opacity: 0.25
+                    opacity: 0.20
                 }}
             />
 
