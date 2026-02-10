@@ -12,9 +12,12 @@ html {
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  /* @apply bg-white dark:bg-gray-950; */
+  @apply bg-white;
+
   margin: 0;
   min-width: 280px;
+  color: black;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

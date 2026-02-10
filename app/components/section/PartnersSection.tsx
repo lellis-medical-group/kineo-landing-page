@@ -6,7 +6,7 @@ const PartnersSection = () => {
     const scrollingLogos = [...PARTNERS_LIST, ...PARTNERS_LIST, ...PARTNERS_LIST];
 
     return (
-        <section className="py-8 bg-white border-b border-gray-50">
+        <section className="py-30 bg-white border-b border-gray-50">
             <div className="container mx-auto px-4 max-w-7xl">
                 <div className="flex flex-col md:flex-row items-center gap-6">
 

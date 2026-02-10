@@ -4,7 +4,7 @@ import FloatingAvatars from '../ui/FloatingAvatars';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden bg-white py-10">
       <AnimatedGrid />
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 max-w-6xl">

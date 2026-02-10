@@ -56,7 +56,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                         <Button variant="ghost" fullWidth href="/login" onClick={onClose}>
                             Log In
                         </Button>
-                        <Button variant="primary" fullWidth href="/start" onClick={onClose}>
+                        <Button variant="secondary" fullWidth href="/start" onClick={onClose}>
                             Start Now
                         </Button>
                     </div>
